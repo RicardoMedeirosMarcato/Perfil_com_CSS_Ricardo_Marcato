@@ -9,7 +9,8 @@ body {
   background-color: #f4f7f6;
   color: #333;
   line-height: 1.6;
-  padding: 20px;
+  padding: 40px; /* Margem em torno de toda a página */
+  background-color: #ecf0f1;
 }
 
 .container {
@@ -24,6 +25,7 @@ header {
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
 }
 
 .profile-img {
