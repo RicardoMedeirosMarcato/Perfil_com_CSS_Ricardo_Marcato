@@ -105,6 +105,14 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.interatividade {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 20px;
