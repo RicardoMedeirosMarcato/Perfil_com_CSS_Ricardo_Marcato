@@ -9,7 +9,7 @@
 <body>
   <header>
     <div class="container">
-      <img src="foto.jpeg" alt="Foto de Ricardo Marcato" class="profile-img">
+      <img src="foto1.jpeg" alt="Foto de Ricardo Marcato" class="profile-img">
       <h1>Ricardo Medeiros Marcato</h1>
       <p>Estagiário de BI | Engenheiro de Dados em formação</p>
     </div>
@@ -75,8 +75,22 @@
     </div>
   </section>
 
+  <!-- NOVA SEÇÃO DE INTERATIVIDADE COM JAVASCRIPT -->
+  <section class="interatividade">
+    <h2>Interatividade com JavaScript</h2>
+    <div style="text-align: center;">
+      <button onclick="alterarEstilo()">Alterar estilo do parágrafo</button>
+      <button onclick="mostrarDataHora()">Mostrar data e hora</button>
+      <button onclick="trocarImagem()">Trocar imagem</button>
+    </div>
+    <p id="dataHora" style="text-align: center; margin-top: 20px;"></p>
+  </section>
+
   <footer>
     <p>&copy; 2025 Ricardo Medeiros Marcato - Todos os direitos reservados</p>
   </footer>
+
+  <!-- Importando o JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
