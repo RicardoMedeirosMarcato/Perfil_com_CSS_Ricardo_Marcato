@@ -1,262 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Ricardo Medeiros Marcato</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ecf0f1;
-      color: #333;
-      padding: 40px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    header {
-      background: linear-gradient(135deg, #2C3E50, #34495E);
-      color: white;
-      padding: 40px;
-      text-align: center;
-      border-radius: 12px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-      margin-bottom: 40px;
-    }
-
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 20px;
-      border: 4px solid #fff;
-      transition: transform 0.3s ease;
-    }
-
-    .profile-img:hover {
-      transform: scale(1.05);
-    }
-
-    h1 {
-      font-size: 2.8rem;
-    }
-
-    h2 {
-      font-size: 2rem;
-      color: #2C3E50;
-      margin-top: 30px;
-      text-align: center;
-      border-bottom: 2px solid #3498DB;
-      padding-bottom: 10px;
-    }
-
-    p, ul {
-      font-size: 1.1rem;
-      text-align: center;
-      margin: 20px 0;
-    }
-
-    ul {
-      list-style-type: none;
-    }
-
-    ul li {
-      margin: 10px 0;
-    }
-
-    section {
-      margin-bottom: 40px;
-      padding: 20px;
-      border-radius: 8px;
-      background-color: #fff;
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
-    }
-
-    button, .button {
-      background-color: #3498DB;
-      color: white;
-      border: none;
-      padding: 12px 25px;
-      text-decoration: none;
-      font-size: 1.1rem;
-      border-radius: 6px;
-      margin: 10px;
-      display: inline-block;
-      cursor: pointer;
-      transition: background-color 0.3s, transform 0.2s;
-    }
-
-    button:hover, .button:hover {
-      background-color: #2980B9;
-      transform: translateY(-2px);
-    }
-
-    .social-links {
-      text-align: center;
-    }
-
-    footer {
-      background-color: #2C3E50;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 50px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .interatividade {
-      margin-top: 50px;
-      padding: 20px;
-      background-color: #fefefe;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        padding: 20px;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      .button {
-        padding: 10px 20px;
-      }
-
-      section {
-        padding: 15px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio - Ricardo Marcato</title>
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <img src="foto.jpeg" alt="Foto de Ricardo Marcato" class="profile-img">
-      <h1>Ricardo Medeiros Marcato</h1>
-      <p>Estagiário de BI | Engenheiro de Dados em formação</p>
-    </div>
-  </header>
+    <header class="container text-center py-4">
+        <img src="foto1.jpeg" alt="Foto de Ricardo Marcato" class="rounded-circle mb-3" width="150" height="150">
+        <p class="lead">Eu sou Ricardo Marcato</p>
+        <h1>Estagiário de BI | Futura Engenheiro de Dados</h1>
+        <p>Sou um jovem apaixonado por dados e tecnologia. Atuo como estagiário de Engenharia de Dados e estou cursando o ensino médio no Colégio da Polícia Militar do Paraná.</p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">SQL</p>
+            <p class="badge bg-secondary">DAX</p>
+            <p class="badge bg-secondary">HTML</p>
+            <p class="badge bg-secondary">CSS</p>
+            <p class="badge bg-secondary">Excel</p>
+        </div>
+    </header>
 
-  <section class="about">
-    <h2>Sobre mim</h2>
-    <p>Sou um jovem com paixão por dados e tecnologias, atualmente estagiando como Engenheiro de Dados e com uma forte base em Ciências Exatas. Busco sempre expandir meus conhecimentos e aplicá-los de forma prática e eficaz.</p>
-  </section>
+    <main class="container mt-5">
+        <h2 class="text-center mb-4">Projetos e Conquistas</h2>
+        <div class="row">
+            <!-- Projeto 1: Iniciação Científica -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Iniciação Científica Júnior - UFPR</h5>
+                        <p class="card-text">Participação no Programa de Iniciação Científica Jr na UFPR (2022-2023), desenvolvendo habilidades de pesquisa e análise de dados.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2: Estágio -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Estágio em Engenharia de Dados</h5>
+                        <p class="card-text">Atuação na Rh Numbers (desde 02/2024), utilizando ferramentas de BI para manipulação e visualização de dados.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 3: Conquistas em Olimpíadas -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Conquistas Acadêmicas</h5>
+                        <p class="card-text">
+                            OBMEP: Prata (2021), Bronze (2022)<br>
+                            OPRM: Ouro (2022)<br>
+                            Canguru: Ouro (2022, 2023, 2024)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-  <section class="contact">
-    <h2>Contatos</h2>
-    <ul>
-      <li>Telefone: (41) 9 9945-3762</li>
-      <li>E-mail: mmarcatoricardo@gmail.com | ricardo.marcato@escola.pr.gov.br</li>
-    </ul>
-  </section>
+    <footer class="container py-5">
+        <h2 class="text-center">Contatos</h2>
+        <div class="text-center mb-3">
+            <i class="bi bi-envelope"></i> <a href="mailto:mmarcatoricardo@gmail.com">mmarcatoricardo@gmail.com</a> |
+            <a href="mailto:ricardo.marcato@escola.pr.gov.br">ricardo.marcato@escola.pr.gov.br</a><br>
+            <i class="bi bi-telephone"></i> (41) 9 9945-3762
+        </div>
+        <div class="text-center">
+            <a href="https://github.com/RicardoMedeirosMarcato" class="me-3"><i class="bi bi-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/ricardo-medeiros-marcato-346b362b1/" class="me-3"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            <a href="https://www.instagram.com/ricardo.marcato/"><i class="bi bi-instagram"></i> Instagram</a>
+        </div>
+        <p class="my-5 text-center">© 2025 Ricardo Marcato</p>
+    </footer>
 
-  <section class="education">
-    <h2>Formação Acadêmica</h2>
-    <p><strong>Cursando Ensino Médio</strong> - Colégio da Polícia Militar do Paraná (Conclusão: dez/2025)</p>
-  </section>
-
-  <section class="languages">
-    <h2>Idiomas</h2>
-    <ul>
-      <li><strong>Inglês</strong> - Avançado (Certificação TOEIC)</li>
-      <li><strong>Espanhol</strong> - Intermediário (Certificação CELEM PR)</li>
-    </ul>
-  </section>
-
-  <section class="experience">
-    <h2>Experiência</h2>
-    <ul>
-      <li><strong>Programa de Iniciação Científica Jr</strong> - UFPR, Curitiba, PR (2022-2023)</li>
-      <li><strong>Estagiário de Engenharia de Dados</strong> - Rh Numbers, Curitiba, PR (fev/2024 - atual)</li>
-    </ul>
-  </section>
-
-  <section class="skills">
-    <h2>Conhecimentos</h2>
-    <ul>
-      <li>Linguagens: DAX, SQL, HTML, CSS</li>
-      <li>Excel</li>
-    </ul>
-  </section>
-
-  <section class="awards">
-    <h2>Medalhas e Conquistas</h2>
-    <ul>
-      <li>Medalhista OBMEP - Prata 2021 | Bronze 2022</li>
-      <li>Medalhista OPRM - Ouro 2022</li>
-      <li>Medalhista Canguru - Ouro 2022 | Ouro 2023 | Ouro 2024</li>
-    </ul>
-  </section>
-
-  <section class="links">
-    <h2>Redes Sociais</h2>
-    <div class="social-links">
-      <a href="https://www.instagram.com/ricardo.marcato/" class="button" target="_blank">Instagram</a>
-      <a href="https://github.com/RicardoMedeirosMarcato" class="button" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/ricardo-medeiros-marcato-346b362b1/" class="button" target="_blank">LinkedIn</a>
-    </div>
-  </section>
-
-  <section class="interatividade">
-    <h2>Interatividade com JavaScript</h2>
-    <div style="text-align: center;">
-      <button onclick="alterarEstilo()">Alterar estilo do parágrafo</button>
-      <button onclick="mostrarDataHora()">Mostrar data e hora</button>
-      <button onclick="trocarImagem()">Trocar imagem</button>
-    </div>
-    <p id="dataHora" style="text-align: center; margin-top: 20px;"></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Ricardo Medeiros Marcato - Todos os direitos reservados</p>
-  </footer>
-
-  <script>
-    function alterarEstilo() {
-      const paragrafo = document.querySelector('.about p');
-      paragrafo.style.color = 'darkgreen';
-      paragrafo.style.fontSize = '20px';
-      paragrafo.style.fontWeight = 'bold';
-      paragrafo.style.backgroundColor = '#dff9fb';
-      paragrafo.innerText = "Estilo modificado com JavaScript!";
-    }
-
-    function mostrarDataHora() {
-      const agora = new Date();
-      const formatado = agora.toLocaleString('pt-BR');
-      document.getElementById("dataHora").innerText = `Data e hora atual: ${formatado}`;
-    }
-
-    let imagemAtual = 1;
-    function trocarImagem() {
-      const img = document.querySelector('.profile-img');
-      if (imagemAtual === 1) {
-        img.src = 'foto2.jpeg';
-        imagemAtual = 2;
-      } else {
-        img.src = 'foto1.jpeg';
-        imagemAtual = 1;
-      }
-    }
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
