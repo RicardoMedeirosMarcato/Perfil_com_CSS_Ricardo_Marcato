@@ -5,11 +5,152 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Ricardo Medeiros Marcato</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ecf0f1;
+      color: #333;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2C3E50, #34495E);
+      color: white;
+      padding: 40px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      margin-bottom: 40px;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #2C3E50;
+      margin-top: 30px;
+      text-align: center;
+      border-bottom: 2px solid #3498DB;
+      padding-bottom: 10px;
+    }
+
+    p, ul {
+      font-size: 1.1rem;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    button, .button {
+      background-color: #3498DB;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      margin: 10px;
+      display: inline-block;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover, .button:hover {
+      background-color: #2980B9;
+      transform: translateY(-2px);
+    }
+
+    .social-links {
+      text-align: center;
+    }
+
+    footer {
+      background-color: #2C3E50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .interatividade {
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #fefefe;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .button {
+        padding: 10px 20px;
+      }
+
+      section {
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <div class="container">
-      <img src="foto.jpeg" alt="Foto de Ricardo Marcato" class="profile-img">
+      <img src="foto1.jpeg" alt="Foto de Ricardo Marcato" class="profile-img">
       <h1>Ricardo Medeiros Marcato</h1>
       <p>Estagiário de BI | Engenheiro de Dados em formação</p>
     </div>
@@ -69,13 +210,12 @@
   <section class="links">
     <h2>Redes Sociais</h2>
     <div class="social-links">
-      <a href="https://www.instagram.com/ricardo.marcato/" class="button">Instagram</a>
-      <a href="https://github.com/RicardoMedeirosMarcato" class="button">GitHub</a>
-      <a href="https://www.linkedin.com/in/ricardo-medeiros-marcato-346b362b1/" class="button">LinkedIn</a>
+      <a href="https://www.instagram.com/ricardo.marcato/" class="button" target="_blank">Instagram</a>
+      <a href="https://github.com/RicardoMedeirosMarcato" class="button" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/ricardo-medeiros-marcato-346b362b1/" class="button" target="_blank">LinkedIn</a>
     </div>
   </section>
 
-  <!-- NOVA SEÇÃO DE INTERATIVIDADE COM JAVASCRIPT -->
   <section class="interatividade">
     <h2>Interatividade com JavaScript</h2>
     <div style="text-align: center;">
@@ -90,7 +230,33 @@
     <p>&copy; 2025 Ricardo Medeiros Marcato - Todos os direitos reservados</p>
   </footer>
 
-  <!-- Importando o JavaScript -->
-  <script src="script.js"></script>
+  <script>
+    function alterarEstilo() {
+      const paragrafo = document.querySelector('.about p');
+      paragrafo.style.color = 'darkgreen';
+      paragrafo.style.fontSize = '20px';
+      paragrafo.style.fontWeight = 'bold';
+      paragrafo.style.backgroundColor = '#dff9fb';
+      paragrafo.innerText = "Estilo modificado com JavaScript!";
+    }
+
+    function mostrarDataHora() {
+      const agora = new Date();
+      const formatado = agora.toLocaleString('pt-BR');
+      document.getElementById("dataHora").innerText = `Data e hora atual: ${formatado}`;
+    }
+
+    let imagemAtual = 1;
+    function trocarImagem() {
+      const img = document.querySelector('.profile-img');
+      if (imagemAtual === 1) {
+        img.src = 'foto2.jpeg';
+        imagemAtual = 2;
+      } else {
+        img.src = 'foto1.jpeg';
+        imagemAtual = 1;
+      }
+    }
+  </script>
 </body>
 </html>
